@@ -7,7 +7,30 @@
 <link rel="stylesheet" href="styles.css"> 
     </head>
     <body>
-        <h1>Welcome to My Web Page</h1>
-        <p>This is a simple HTML document.</p>
-        <p>Feel free to explore and modify it!</p>
+        div class="card" id="rating-card">
+        <div><img src="image/icon-star.svg" alt=""  class="icon-star"></div>
+    <div  class="first-page">
+      <h2>How did we do?</h2>
+      <p  class="review">Please let us know how we did with your support <br>request. All feedback is appreciated to help us <br>improve our offering!</p>
+    </div>
+    <div class="ratings">
+      <button class="rating" onclick="selectRating(1)">1</button>
+      <button class="rating" onclick="selectRating(2)">2</button>
+      <button class="rating" onclick="selectRating(3)">3</button>
+      <button class="rating" onclick="selectRating(4)">4</button>
+      <button class="rating" onclick="selectRating(5)">5</button>
+    </div>
+    <button class="submit-btn" onclick="submitRating()">SUBMIT</button>
+  </div>
+
+  <div class="card hidden" id="thank-you-card">
+    <div class="thank-you">
+        <div   class="thank-you-image"><img src="image/illustration-thank-you.svg" alt="Thank you icon"></div>
+      <div class="selected-rating" id="selected-rating"></div>
+      <h2>Thank you!</h2>
+      <p class="appreciation">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+  </div>
+    
+  </body>
 </html>
